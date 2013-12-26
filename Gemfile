@@ -40,3 +40,5 @@ group :doc do
 end
 
 gem 'activeadmin', github: 'gregbell/active_admin'
+
+gem 'rails_12factor', group: :production
