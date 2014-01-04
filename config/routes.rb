@@ -1,4 +1,5 @@
 Tesis::Application.routes.draw do
+  devise_for :patients
   resources :turns
 
   resources :histories

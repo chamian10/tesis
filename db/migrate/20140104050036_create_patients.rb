@@ -6,7 +6,6 @@ class CreatePatients < ActiveRecord::Migration
       t.boolean :gender
       t.integer :age
       t.string :dni
-      t.string :email
       t.string :address
       t.string :photo
 

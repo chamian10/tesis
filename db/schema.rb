@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140104061951) do
+ActiveRecord::Schema.define(version: 20140104074548) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -67,12 +67,24 @@ ActiveRecord::Schema.define(version: 20140104061951) do
     t.boolean  "gender"
     t.integer  "age"
     t.string   "dni"
-    t.string   "email"
     t.string   "address"
     t.string   "photo"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0,  null: false
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
   end
+
+  add_index "patients", ["email"], name: "index_patients_on_email", unique: true
+  add_index "patients", ["reset_password_token"], name: "index_patients_on_reset_password_token", unique: true
 
   create_table "turns", force: true do |t|
     t.date     "date"
