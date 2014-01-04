@@ -1,4 +1,10 @@
 Tesis::Application.routes.draw do
+  resources :turns
+
+  resources :histories
+
+  resources :patients
+
   get "pages/index"
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

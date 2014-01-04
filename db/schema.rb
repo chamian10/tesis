@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131220203746) do
+ActiveRecord::Schema.define(version: 20140104061951) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -45,5 +45,41 @@ ActiveRecord::Schema.define(version: 20131220203746) do
 
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+
+  create_table "histories", force: true do |t|
+    t.decimal  "height"
+    t.decimal  "current_weight"
+    t.decimal  "customary_weight"
+    t.decimal  "circumference"
+    t.string   "activity"
+    t.string   "degree_of_stress"
+    t.string   "pathology"
+    t.text     "observation"
+    t.string   "nutrition_diagnosis"
+    t.integer  "patient_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "patients", force: true do |t|
+    t.string   "name"
+    t.string   "lastname"
+    t.boolean  "gender"
+    t.integer  "age"
+    t.string   "dni"
+    t.string   "email"
+    t.string   "address"
+    t.string   "photo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "turns", force: true do |t|
+    t.date     "date"
+    t.boolean  "state"
+    t.integer  "patient_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

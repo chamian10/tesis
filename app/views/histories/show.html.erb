@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @history.height %>
+</p>
+
+<p>
+  <strong>Current weight:</strong>
+  <%= @history.current_weight %>
+</p>
+
+<p>
+  <strong>Customary weight:</strong>
+  <%= @history.customary_weight %>
+</p>
+
+<p>
+  <strong>Circumference:</strong>
+  <%= @history.circumference %>
+</p>
+
+<p>
+  <strong>Activity:</strong>
+  <%= @history.activity %>
+</p>
+
+<p>
+  <strong>Degree of stress:</strong>
+  <%= @history.degree_of_stress %>
+</p>
+
+<p>
+  <strong>Pathology:</strong>
+  <%= @history.pathology %>
+</p>
+
+<p>
+  <strong>Observation:</strong>
+  <%= @history.observation %>
+</p>
+
+<p>
+  <strong>Nutrition diagnosis:</strong>
+  <%= @history.nutrition_diagnosis %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @history.patient_id %>
+</p>
+
+<%= link_to 'Edit', edit_history_path(@history) %> |
+<%= link_to 'Back', histories_path %>

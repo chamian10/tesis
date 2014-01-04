@@ -1,0 +1,45 @@
+<h1>Listing histories</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Height</th>
+      <th>Current weight</th>
+      <th>Customary weight</th>
+      <th>Circumference</th>
+      <th>Activity</th>
+      <th>Degree of stress</th>
+      <th>Pathology</th>
+      <th>Observation</th>
+      <th>Nutrition diagnosis</th>
+      <th>Patient</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @histories.each do |history| %>
+      <tr>
+        <td><%= history.height %></td>
+        <td><%= history.current_weight %></td>
+        <td><%= history.customary_weight %></td>
+        <td><%= history.circumference %></td>
+        <td><%= history.activity %></td>
+        <td><%= history.degree_of_stress %></td>
+        <td><%= history.pathology %></td>
+        <td><%= history.observation %></td>
+        <td><%= history.nutrition_diagnosis %></td>
+        <td><%= history.patient_id %></td>
+        <td><%= link_to 'Show', history %></td>
+        <td><%= link_to 'Edit', edit_history_path(history) %></td>
+        <td><%= link_to 'Destroy', history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New History', new_history_path %>

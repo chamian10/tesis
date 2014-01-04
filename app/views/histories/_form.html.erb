@@ -1,0 +1,57 @@
+<%= form_for(@history) do |f| %>
+  <% if @history.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@history.errors.count, "error") %> prohibited this history from being saved:</h2>
+
+      <ul>
+      <% @history.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :height %><br>
+    <%= f.text_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :current_weight %><br>
+    <%= f.text_field :current_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :customary_weight %><br>
+    <%= f.text_field :customary_weight %>
+  </div>
+  <div class="field">
+    <%= f.label :circumference %><br>
+    <%= f.text_field :circumference %>
+  </div>
+  <div class="field">
+    <%= f.label :activity %><br>
+    <%= f.text_field :activity %>
+  </div>
+  <div class="field">
+    <%= f.label :degree_of_stress %><br>
+    <%= f.text_field :degree_of_stress %>
+  </div>
+  <div class="field">
+    <%= f.label :pathology %><br>
+    <%= f.text_field :pathology %>
+  </div>
+  <div class="field">
+    <%= f.label :observation %><br>
+    <%= f.text_area :observation %>
+  </div>
+  <div class="field">
+    <%= f.label :nutrition_diagnosis %><br>
+    <%= f.text_field :nutrition_diagnosis %>
+  </div>
+  <div class="field">
+    <%= f.label :patient_id %><br>
+    <%= f.number_field :patient_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
