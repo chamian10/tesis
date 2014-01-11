@@ -1,5 +1,8 @@
 Tesis::Application.routes.draw do
+  get "pages/turnosRegistro"
+
   devise_for :patients
+
   resources :turns
 
   resources :histories
@@ -14,6 +17,8 @@ Tesis::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'pages#index'
+
+  match 'pages/turnosRegistro', to: 'pages#turnosRegistro', via: [:get, :post]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

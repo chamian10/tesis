@@ -1644,11 +1644,11 @@ table.index_grid td {
   padding: 0 20px 20px 0;
   margin: 0; }
 
-.columns {
-  clear: both;
-  padding: 0; }
-  .columns .column {
-    float: left; }
+/*.columns {*/
+  /*clear: both;*/
+  /*padding: 0; }*/
+  /*.columns .column {*/
+    /*float: left; }*/
 
 a, a:link, a:visited {
   color: #38678b;
@@ -1860,8 +1860,8 @@ a:hover {
     border: none;
     border-bottom: 1px solid #E8E8E8; }
 
-.columns {
-  margin-bottom: 10px; }
+/*.columns {*/
+  /*margin-bottom: 10px; }*/
 
 .scopes li .count {
   color: #8e979e;

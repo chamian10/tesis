@@ -23,7 +23,7 @@ span.icon {
   width: 0.8em;
   height: 0.8em; }
 
-/* Active Admin CSS */
+ Active Admin CSS
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -295,8 +295,8 @@ th, td, caption {
       margin-bottom: 5px;
       font-size: 1.0em;
       position: relative;
-      /* Hover on li, display the ul */
-      /* Drop down menus */ }
+       Hover on li, display the ul
+       Drop down menus  }
       #header ul.tabs > li a {
         text-decoration: none;
         padding: 6px 10px 4px 10px;
@@ -388,11 +388,11 @@ th, td, caption {
       display: inline; }
 
 form {
-  /* Reset margins & Padding */
-  /* Nested Fieldsets and Legends */
-  /* Text Fields */
-  /* semantic_errors */
-  /* Buttons */ }
+   Reset margins & Padding
+   Nested Fieldsets and Legends
+   Text Fields
+   semantic_errors
+   Buttons  }
   form ul, form ol, form li, form fieldset, form legend, form input, form textarea, form select, form p {
     margin: 0;
     padding: 0; }
@@ -524,12 +524,12 @@ form {
       -moz-box-shadow: 0 0 4px #99a2aa;
       -webkit-box-shadow: 0 0 4px #99a2aa; }
   form fieldset > ol > li {
-    /* Hints */
-    /* Date and Time Fields */
-    /* Check Boxes or Radio fields */
-    /* Boolean Field */
-    /* Hidden fields */
-    /* Errors */ }
+     Hints
+     Date and Time Fields
+     Check Boxes or Radio fields
+     Boolean Field
+     Hidden fields
+     Errors  }
     form fieldset > ol > li p.inline-hints {
       font-size: 0.95em;
       font-style: italic;
@@ -1658,11 +1658,11 @@ table.index_grid td {
   padding: 0 20px 20px 0;
   margin: 0; }
 
-.columns {
-  clear: both;
-  padding: 0; }
-  .columns .column {
-    float: left; }
+/*.columns {*/
+  /*clear: both;*/
+  /*padding: 0; }*/
+  /*.columns .column {*/
+    /*float: left; }*/
 
 a, a:link, a:visited {
   color: #38678b;
@@ -1874,8 +1874,8 @@ a:hover {
     border: none;
     border-bottom: 1px solid #E8E8E8; }
 
-.columns {
-  margin-bottom: 10px; }
+/*.columns {*/
+  /*margin-bottom: 10px; }*/
 
 .scopes li .count {
   color: #8e979e;
@@ -2084,7 +2084,7 @@ body.logged_out {
       width: 1em;
       height: 1em; }
   body.logged_out #login {
-    /* Login Form */ }
+     Login Form  }
     body.logged_out #login form fieldset {
       box-shadow: none;
       -moz-box-shadow: none;

@@ -14,4 +14,12 @@
 // Overriding any non-variable SASS must be done after the fact.
 // For example, to change the default status-tag color:
 //
-//   .email { background: #6090DB; }
+html {
+
+  background-color: #64d27b;
+}
+
+#wrapper {
+
+  background-color: #64d27b;
+}

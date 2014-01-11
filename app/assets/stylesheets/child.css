@@ -1,0 +1,52 @@
+body .slug-pattern {
+    background-color: #64d27b;
+}
+
+ul.pricing li.price span {
+    color: #64d27b;
+}
+
+.body .pagination ul.pages li.active a:hover {
+    color: #64d27b;
+}
+
+.body .blog blockquote, blockquote.full {
+    border-left: 2px solid #64d27b;
+}
+
+.body .blog.style-4 .border .meta p {
+    background: #64d27b;
+}
+
+.footer.style-2 .foot-nav-bg {
+    background-color: #64d27b;
+}
+
+.footer .foot-nav {
+    background-color: #64d27b;
+}
+
+h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+    color: #64d27b;
+}
+
+a, a:visited {
+    color: #64d27b;
+}
+
+.tabbed-area ul.tabs li a.active {
+    color: #64d27b;
+    border-top: 1px solid #64d27b;
+}
+
+.header .nav .standard ul.tabs li a.active, .header .nav .standard ul.tabs li a:hover {
+    color: #64d27b;
+}
+
+.header .logo {
+    /*background-color: #3aa9d2;*/
+}
+
+.footer .logo-caption, .footer .logo-caption-overlay {
+    background-color: #64d27b;
+}
