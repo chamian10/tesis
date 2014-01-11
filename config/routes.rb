@@ -1,6 +1,5 @@
 Tesis::Application.routes.draw do
   get "pages/turnosRegistro"
-
   devise_for :patients
 
   resources :turns

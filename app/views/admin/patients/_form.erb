@@ -1,0 +1,19 @@
+<%= semantic_form_for [:admin, @patient] do |f| %>
+
+    <%= f.inputs "Editar" do %>
+        <%= f.input :name %>
+        <%= f.input :lastname %>
+        <%= f.input :email %>
+        <%= f.input :photo %>
+        <%= f.input :age %>
+        <%= f.input :dni %>
+
+    <% end %>
+
+    <%= f.actions do %>
+        <%= f.action :submit %>
+        <li class="cancel">
+          <%= link_to "Cancel", admin_patients_path %>
+        </li>
+    <% end %>
+<% end %>
