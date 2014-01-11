@@ -8,7 +8,7 @@ ActiveAdmin.setup do |config|
   config.site_title = "Tesis"
 
   #Poner el logo en el admin
-  config.site_title_image = "/assets/logo.png"
+  config.site_title_image = "/assets/logos/logoTesisSmall.png"
 
   # Set the link url for the title. For example, to take
   # users to your main site. Defaults to no link.

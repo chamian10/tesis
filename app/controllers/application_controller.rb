@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
 
   before_filter :authenticate_patient!
 
+  #skip_before_filter :admin_user
 
   protect_from_forgery with: :exception
 

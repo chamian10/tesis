@@ -5,4 +5,7 @@ class PagesController < ApplicationController
 
   def turnosRegistro
   end
+
+  def profile
+  end
 end

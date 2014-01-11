@@ -1,0 +1,23 @@
+<%= semantic_form_for [:admin, @history] do |f| %>
+
+    <%= f.inputs "Editar" do %>
+        <%= f.input :patient %>
+        <%= f.input :height %>
+        <%= f.input :current_weight %>
+        <%= f.input :customary_weight %>
+        <%= f.input :circumference %>
+        <%= f.input :activity %>
+        <%= f.input :degree_of_stress %>
+        <%= f.input :pathology %>
+        <%= f.input :observation %>
+        <%= f.input :nutrition_diagnosis %>
+
+    <% end %>
+
+    <%= f.actions do %>
+        <%= f.action :submit %>
+        <li class="cancel">
+          <%= link_to "Cancel", admin_histories_path %>
+        </li>
+    <% end %>
+<% end %>

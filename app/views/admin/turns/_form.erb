@@ -1,0 +1,16 @@
+<%= semantic_form_for [:admin, @turn] do |f| %>
+
+    <%= f.inputs "Editar" do %>
+        <%= f.input :patient %>
+        <%= f.input :date %>
+        <%= f.input :state %>
+
+    <% end %>
+
+    <%= f.actions do %>
+        <%= f.action :submit %>
+        <li class="cancel">
+          <%= link_to "Cancel", admin_turns_path %>
+        </li>
+    <% end %>
+<% end %>
