@@ -4,7 +4,7 @@ class Patient < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :histories
-  has_many :turns
+  has_one :history
+  has_one :turn
 
 end

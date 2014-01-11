@@ -8,4 +8,8 @@ class PagesController < ApplicationController
 
   def profile
   end
+
+  def game
+
+  end
 end
