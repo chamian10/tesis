@@ -20,6 +20,7 @@ Tesis::Application.routes.draw do
   match 'pages/turnosRegistro', to: 'pages#turnosRegistro', via: [:get, :post]
   match 'pages/profile', to: 'pages#profile', via: [:get, :post]
   match 'pages/game', to: 'pages#game', via: [:get, :post]
+  match 'pages/contact', to: 'pages#contact', via: [:get, :post]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
