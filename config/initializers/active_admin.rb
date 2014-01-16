@@ -136,6 +136,7 @@ ActiveAdmin.setup do |config|
   #
   config.batch_actions = true
 
+  config.skip_before_filter :authenticate_patients!
 
   # == Controller Filters
   #

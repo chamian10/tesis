@@ -1,26 +1,28 @@
 Tesis::Application.routes.draw do
-  get "pages/turnosRegistro"
-  devise_for :patients
 
-  resources :turns
-
-  resources :histories
-
-  resources :patients
-
-  get "pages/index"
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
-
-  # You can have the root of your site routed with "root"
   root 'pages#index'
 
   match 'pages/turnosRegistro', to: 'pages#turnosRegistro', via: [:get, :post]
   match 'pages/profile', to: 'pages#profile', via: [:get, :post]
   match 'pages/game', to: 'pages#game', via: [:get, :post]
   match 'pages/contact', to: 'pages#contact', via: [:get, :post]
+
+  resources :turns
+  resources :histories
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
+
+  match 'admin', to: 'admin#login', via: [:get, :post]
+  devise_for :patients, :path => '', :path_names => { :sign_in => "login", :sign_out => "logout", :sign_up => "register" }
+  resources :patients
+
+
+
+  # The priority is based upon order of creation: first created -> highest priority.
+  # See how all your routes lay out with "rake routes".
+
+  # You can have the root of your site routed with "root"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

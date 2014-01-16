@@ -15,7 +15,15 @@
 
             <div id="slide-01" class="oneByOne_item" data-bg="/assets/slide/bg4.jpg">
               <div id="left">
-                <h1>Bienvenid@ <%= current_patient.email%> a <strong>Nutrición para todos!</strong></h1></br>
+                <% if patient_signed_in?%>
+
+                    <h1>Bienvenid@ <%= current_patient.email%> a <strong>Nutrición para todos!</strong></h1></br>
+
+                <%else%>
+
+                    <h1>Bienvenid@s a <strong>Nutrición para todos!</strong></h1></br>
+
+              <%end%>
 
                 </br>
                 </br>

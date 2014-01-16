@@ -2,4 +2,6 @@ class History < ActiveRecord::Base
 
   belongs_to :patient
 
-end
+  validates_presence_of :patient
+
+ end

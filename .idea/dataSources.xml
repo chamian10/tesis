@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2580646777">
+  <component name="DataSourceManagerImpl" format="xml" hash="379012452">
     <data-source source="LOCAL" name="Rails tesis: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="648bdf8f-cf51-4ba4-9596-325697af0b2a">
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\Damian\Desktop\Tesis\tesis\db\development.sqlite3</jdbc-url>
@@ -12,6 +12,24 @@
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
         </library>
       </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails tesis: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="1bdfc652-69e4-4541-a34f-7bc6685111e7">
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Damian\Desktop\Tesis\tesis\db\test.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/xerial-sqlite-license.txt</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Data Source" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="77f12f5b-4b97-40ff-8dbb-b84e5cd8d870">
+      <synchronize>true</synchronize>
+      <jdbc-driver>sun.jdbc.odbc.JdbcOdbcDriver</jdbc-driver>
+      <jdbc-url>jdbc://</jdbc-url>
+      <libraries />
     </data-source>
   </component>
 </project>

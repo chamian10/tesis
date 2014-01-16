@@ -5,6 +5,6 @@ class Patient < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_one :history
-  has_one :turn
+  has_many :turns
 
 end

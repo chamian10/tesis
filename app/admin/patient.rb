@@ -9,6 +9,9 @@ ActiveAdmin.register Patient do
     column :id
     column :name
     column :lastname
+    column("Historia") do |element|
+      link_to admin_history_path(element)
+    end
     column :email
     column :photo
     column :age

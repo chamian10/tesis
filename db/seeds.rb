@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Turn.delete_all
+Turn.reset_pk_sequence
+Turn.create(:state =>"Ocupado")
+Turn.create(:state =>"Libre")
