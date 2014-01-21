@@ -1,10 +1,7 @@
 ActiveAdmin.register Turn do
 
-  
-  # See permitted parameters documentation:
-  # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
-  #
-  permit_params :date, :state
+  permit_params :date, :patient_id
+
 
   config.per_page = 10
 
@@ -12,7 +9,9 @@ ActiveAdmin.register Turn do
 
     column :id
     column :patient
-    column :state
+    column :date
+    column :name
+
 
     column "Editar" do |element|
       link_to image_tag("/assets/img_active_admin/edit.png", :style => "height: 20px; width: 20px;"), edit_admin_turn_path(element)
@@ -38,6 +37,7 @@ ActiveAdmin.register Turn do
       row :id
       row :patient
       row :date
+      row :name
     end
 
   end

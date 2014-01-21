@@ -2,8 +2,9 @@ class CreateTurns < ActiveRecord::Migration
   def change
     create_table :turns do |t|
       t.date :date
-      t.boolean :state
-      t.integer :patient_id
+      t.time :time
+      t.string :name
+      t.references :patient, index: true
 
       t.timestamps
     end

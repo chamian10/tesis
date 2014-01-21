@@ -1,19 +1,30 @@
-<p id="notice"><%= notice %></p>
 
+<p id="notice" class="text-center"><%= notice %></p>
+
+<div class="text-center">
 <p>
   <strong>Date:</strong>
   <%= @turn.date %>
 </p>
 
 <p>
-  <strong>State:</strong>
-  <%= @turn.state %>
+  <strong>Time:</strong>
+  <%= @turn.time %>
 </p>
 
-<p>
-  <strong>Patient:</strong>
-  <%= @turn.patient_id %>
-</p>
+<!--<p>-->
+  <!--<strong>Name:</strong>-->
+  <!--<%#= @turn.name %>-->
+<!--</p>-->
 
-<%= link_to 'Edit', edit_turn_path(@turn) %> |
-<%= link_to 'Back', turns_path %>
+<!--<p>-->
+  <!--<strong>Patient:</strong>-->
+  <!--<%#= @turn.patient %>-->
+<!--</p>-->
+
+<%#= link_to 'Edit', edit_turn_path(@turn) %>
+<%#= link_to 'Back', turns_path %>
+  <a class="btn btn-large" href="<%=root_path%>">Volver a la página</a>
+
+
+</div>  </br>

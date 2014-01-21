@@ -7,4 +7,6 @@ class Patient < ActiveRecord::Base
   has_one :history
   has_many :turns
 
+  validates_presence_of :email
+
 end

@@ -4,7 +4,8 @@
   <thead>
     <tr>
       <th>Date</th>
-      <th>State</th>
+      <th>Time</th>
+      <th>Name</th>
       <th>Patient</th>
       <th></th>
       <th></th>
@@ -16,8 +17,9 @@
     <% @turns.each do |turn| %>
       <tr>
         <td><%= turn.date %></td>
-        <td><%= turn.state %></td>
-        <td><%= turn.patient_id %></td>
+        <td><%= turn.time %></td>
+        <td><%= turn.name %></td>
+        <td><%= turn.patient %></td>
         <td><%= link_to 'Show', turn %></td>
         <td><%= link_to 'Edit', edit_turn_path(turn) %></td>
         <td><%= link_to 'Destroy', turn, method: :delete, data: { confirm: 'Are you sure?' } %></td>

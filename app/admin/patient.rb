@@ -1,6 +1,6 @@
 ActiveAdmin.register Patient do
 
-  permit_params :name, :lastname, :age, :gender, :dni, :patient, :photo
+  permit_params :name, :lastname, :age, :gender, :dni, :patient, :photo, :history
 
   config.per_page = 10
 
@@ -9,9 +9,7 @@ ActiveAdmin.register Patient do
     column :id
     column :name
     column :lastname
-    column("Historia") do |element|
-      link_to admin_history_path(element)
-    end
+    column :history
     column :email
     column :photo
     column :age

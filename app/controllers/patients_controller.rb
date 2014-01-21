@@ -1,7 +1,7 @@
 class PatientsController < InheritedResources::Base
 
   def patient_params
-    params.require(:patient).permit(:name, :lastname, :email, :age, :age, :dni)
+    params.require(:patient).permit(:name, :lastname, :email, :age, :dni)
   end
   #
   #def index

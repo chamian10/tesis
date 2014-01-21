@@ -1,11 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  date: 2014-01-04
-  state: false
-  patient_id: 1
+  date: 2014-01-21
+  time: 2014-01-21 13:32:34
+  name: MyString
+  patient_id: 
 
 two:
-  date: 2014-01-04
-  state: false
-  patient_id: 1
+  date: 2014-01-21
+  time: 2014-01-21 13:32:34
+  name: MyString
+  patient_id: 

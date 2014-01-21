@@ -10,7 +10,7 @@
 <!--[if (gte IE 9)|!(IE)]><!-->
 <html lang="en"> <!--<![endif]-->
 <head>
-  <title>Tesis</title>
+  <title>Nutrición</title>
 
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -50,7 +50,6 @@
 
 </head>
 <body>
-<%= link_to "Sign out", destroy_patient_session_path, :method => :delete %>
 
 <div class="page-wrapper">
 <div class="slug-pattern slider-expand">
@@ -83,7 +82,7 @@
 
               </ul>
             </li>
-            <li><a href="<%=pages_turnosRegistro_path%>">Turnos</a>
+            <li><a href="<%=new_turn_path%>">Turnos</a>
               <ul class="child">
 
               </ul>
@@ -103,6 +102,14 @@
             <li>
               <a href="<%=pages_contact_path%>">
                 Contacto </a></li>
+
+            <%if patient_signed_in?%>
+            <li>
+              <%= link_to "Salir", destroy_patient_session_path, :method => :delete %>
+            </li>
+                <%else%>
+            <li></li>
+                <%end%>
           </ul>
         </div>
       </div>
@@ -154,7 +161,7 @@
         <div class="sixteen circles columns">
           <ul>
             <li class="columns">
-              <a href="<%=pages_turnosRegistro_path%>">
+              <a href="<%=new_turn_path%>">
                 <div class="icon iphone">
                   <div class="content">
                     <div class="symbol"></div>

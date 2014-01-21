@@ -18,7 +18,7 @@ class TurnsControllerTest < ActionController::TestCase
 
   test "should create turn" do
     assert_difference('Turn.count') do
-      post :create, turn: { date: @turn.date, patient_id: @turn.patient_id, state: @turn.state }
+      post :create, turn: { date: @turn.date, name: @turn.name, patient_id: @turn.patient_id, time: @turn.time }
     end
 
     assert_redirected_to turn_path(assigns(:turn))
@@ -35,7 +35,7 @@ class TurnsControllerTest < ActionController::TestCase
   end
 
   test "should update turn" do
-    patch :update, id: @turn, turn: { date: @turn.date, patient_id: @turn.patient_id, state: @turn.state }
+    patch :update, id: @turn, turn: { date: @turn.date, name: @turn.name, patient_id: @turn.patient_id, time: @turn.time }
     assert_redirected_to turn_path(assigns(:turn))
   end
 

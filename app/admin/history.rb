@@ -5,7 +5,7 @@ ActiveAdmin.register History do
   # https://github.com/gregbell/active_admin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
   permit_params :height, :current_weight, :customary_weight, :circumference, :activity, :degree_of_stress, :pathology,
-                :observation, :nutrition_diagnosis
+                :observation, :nutrition_diagnosis, :patient_id
 
 
   config.per_page = 10

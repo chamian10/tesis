@@ -1,14 +1,18 @@
 Tesis::Application.routes.draw do
 
+
+
+  resources :turns
+
   root 'pages#index'
 
-  match 'pages/turnosRegistro', to: 'pages#turnosRegistro', via: [:get, :post]
+  match 'turns/new', to: 'turns#new', via: [:get, :post]
   match 'pages/profile', to: 'pages#profile', via: [:get, :post]
   match 'pages/game', to: 'pages#game', via: [:get, :post]
   match 'pages/contact', to: 'pages#contact', via: [:get, :post]
 
-  resources :turns
   resources :histories
+  resources :turns
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

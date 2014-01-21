@@ -8,6 +8,5 @@
 
 
 Turn.delete_all
-Turn.reset_pk_sequence
-Turn.create(:state =>"Ocupado")
-Turn.create(:state =>"Libre")
+Turn.create(name: 'Libre')
+Turn.create(name: 'Ocupado')

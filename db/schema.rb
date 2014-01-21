@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140104074548) do
+ActiveRecord::Schema.define(version: 20140121163234) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -88,10 +88,13 @@ ActiveRecord::Schema.define(version: 20140104074548) do
 
   create_table "turns", force: true do |t|
     t.date     "date"
-    t.boolean  "state"
+    t.time     "time"
+    t.string   "name"
     t.integer  "patient_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "turns", ["patient_id"], name: "index_turns_on_patient_id"
 
 end
