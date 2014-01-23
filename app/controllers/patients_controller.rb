@@ -29,6 +29,10 @@ class PatientsController < ApplicationController
     @patient = Patient.new(patient_params)
     respond_to do |format|
       if @patient.save
+
+        # Tell the UserMailer to send a welcome email after save
+        PatientMailer.welcome_email(@patient).deliver
+
         format.html { redirect_to @patient, notice: 'Sus datos fueron guardados, gracias '  + current_patient.email }
         format.json { render action: 'show', status: :created, location: @patient }
       else

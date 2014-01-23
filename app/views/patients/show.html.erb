@@ -1,4 +1,6 @@
-<p id="notice"><%= notice %></p>
+<p id="notice" class="text-center"><%= notice %></p>
+
+<div class="text-center">
 
 <p>
   <strong>Name:</strong>
@@ -10,10 +12,10 @@
   <%= @patient.lastname %>
 </p>
 
-<p>
-  <strong>Gender:</strong>
-  <%= @patient.gender %>
-</p>
+<!--<p>-->
+  <!--<strong>Gender:</strong>-->
+  <!--<%#= @patient.gender %>-->
+<!--</p>-->
 
 <p>
   <strong>Age:</strong>
@@ -40,5 +42,7 @@
   <%= @patient.photo %>
 </p>
 
-<%= link_to 'Edit', edit_patient_path(@patient) %>
-<%= link_to 'Back', patients_path %>
+<a class="btn" href="<%=edit_patient_path(current_patient)%>">Editar</a></br></br>
+<a class="btn btn-large" href="<%=root_path%>">Volver a la página</a>
+
+</div>  </br>
