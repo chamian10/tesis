@@ -1350,8 +1350,8 @@
 		background:url(../assets/design/footer-divider.png) left 14px repeat-x transparent;
 	}
 	.footer ul.sm {display:inline-block;margin:0;padding:0;}
-	.footer ul.sm li a {height:28px;}
-	.footer ul.sm li {position:relative;padding:0;margin:0 4px 6px 0;float:left;text-indent:-99999px;width:28px;height:28px;}
+	.footer ul.sm li a {height:28px; background: none;}
+	.footer ul.sm li {position:relative;padding:0;margin:0 4px 6px 0;float:left;text-indent:-99999px;width:28px;height:28px;background: none;}
 	.footer ul.sm li .overlay { position:absolute;width:24px;height:24px;display:none;z-index:1000;display:none;}
 	.footer ul.sm li.aboutme {background-image:url(../assets/icons/sm_icons/round/icon-aboutme.png);}
 	.footer ul.sm li.behance {background-image:url(../assets/icons/sm_icons/round/icon-behance.png);}

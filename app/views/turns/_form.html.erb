@@ -1,35 +1,39 @@
 <div class="text-center">
-<%= form_for(@turn) do |f| %>
-  <% if @turn.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@turn.errors.count, "error") %> prohibited this turn from being saved:</h2>
+  <%= form_for(@turn) do |f| %>
+      <% if @turn.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@turn.errors.count, "error") %> prohibited this turn from being saved:</h2>
 
-      <ul>
-      <% @turn.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
+            <ul>
+              <% @turn.errors.full_messages.each do |msg| %>
+                  <li><%= msg %></li>
+              <% end %>
+            </ul>
+          </div>
       <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :date %><br>
-    <%= f.date_select :date %>
-  </div>
-  <div class="field">
-    <%= f.label :time %><br>
-    <%= f.time_select :time %>
-  </div>
-  <div class="field">
-    <%= f.hidden_field :name %><br>
-    <%= f.hidden_field :name %>
-  </div>
-  <div class="field">
-    <%= f.hidden_field :patient_id %><br>
-    <%= f.hidden_field :patient_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+      <div class="field">
+        <%= f.label :date %>
+        <br>
+        <%= f.date_select :date, start_year: Time.now.year %>
+      </div>
+      <div class="field">
+        <%= f.label :time %>
+        <br>
+        <%= f.time_select :time, minute_step: 15, start_hour: 9, end_hour: 18 %>
+      </div>
+      <div class="field">
+        <%= f.hidden_field :name %>
+        <br>
+        <%= f.hidden_field :name %>
+      </div>
+      <div class="field">
+        <%= f.hidden_field :patient_id %>
+        <br>
+        <%= f.hidden_field :patient_id %>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+  <% end %>
 </div>

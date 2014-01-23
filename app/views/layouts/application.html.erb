@@ -104,9 +104,14 @@
                 Contacto </a></li>
 
             <%if patient_signed_in?%>
+               <li>
+                 <%= link_to "Mis datos", edit_patient_path(current_patient)%>
+
+               </li>
             <li>
               <%= link_to "Salir", destroy_patient_session_path, :method => :delete %>
             </li>
+
                 <%else%>
             <li></li>
                 <%end%>

@@ -41,6 +41,7 @@ a, a:visited {
 
 .header .nav .standard ul.tabs li a.active, .header .nav .standard ul.tabs li a:hover {
     color: #64d27b;
+    background: none;
 }
 
 .header .logo {

@@ -30,15 +30,15 @@
   <%= @patient.email %>
 </p>
 
-<p>
-  <strong>Address:</strong>
-  <%= @patient.patient %>
-</p>
+<!--<p>-->
+  <!--<strong>Address:</strong>-->
+  <!--<%#= @patient.patient %>-->
+<!--</p>-->
 
 <p>
   <strong>Photo:</strong>
   <%= @patient.photo %>
 </p>
 
-<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Edit', edit_patient_path(@patient) %>
 <%= link_to 'Back', patients_path %>

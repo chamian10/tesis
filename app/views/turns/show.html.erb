@@ -2,14 +2,28 @@
 <p id="notice" class="text-center"><%= notice %></p>
 
 <div class="text-center">
-<p>
-  <strong>Date:</strong>
-  <%= @turn.date %>
+
+  <p>
+    <strong>Paciente:</strong>
+    <%#= @turn.time %>
+    <%if current_patient.name?%>
+        <%= current_patient.name + ' '+ current_patient.lastname %>
+
+  <%else%>
+        <%= current_patient.email%>
+<%end%>
+
+        </p>
+
+  <p>
+  <strong>Fecha:</strong>
+  <%= @turn.date.strftime('%d/%m/%Y') %>
 </p>
 
 <p>
-  <strong>Time:</strong>
-  <%= @turn.time %>
+  <strong>Hora:</strong>
+  <%#= @turn.time %>
+  <%= @turn.time.strftime('%H:%M') +' HS' %>
 </p>
 
 <!--<p>-->
@@ -22,8 +36,7 @@
   <!--<%#= @turn.patient %>-->
 <!--</p>-->
 
-<%#= link_to 'Edit', edit_turn_path(@turn) %>
-<%#= link_to 'Back', turns_path %>
+  <a class="btn" href="<%=edit_turn_path(@turn)%>">Editar</a></br></br>
   <a class="btn btn-large" href="<%=root_path%>">Volver a la página</a>
 
 

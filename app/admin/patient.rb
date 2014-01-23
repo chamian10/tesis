@@ -40,6 +40,7 @@ ActiveAdmin.register Patient do
       row :id
       row :name
       row :lastname
+      row :history
       row :email
       row :photo
       row :age

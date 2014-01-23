@@ -1,6 +1,18 @@
-<h1>Mis Datos</h1>
+<div class="container text-center">
+  <h1>Completa o actualiza tus datos</h1>
+  <h2>Paciente:<%=current_patient.lastname %></h2>
+  <div class="span12">
+  <div class="offset4 span4  offset4">
 
-<%= render 'form' %>
+  <div class="text-center">
 
-<%= link_to 'Show', @patient %> |
-<%= link_to 'Back', patients_path %>
+
+    <%= render 'form' %>
+
+<%#= link_to 'Show', @patient %>
+<%#= link_to 'Back', patients_path %>
+
+  </div>
+    </div>
+  </div>
+</div>

@@ -5,6 +5,7 @@ class TurnsController < ApplicationController
   # GET /turns.json
   def index
     @turns = Turn.all
+
   end
 
   # GET /turns/1
@@ -15,6 +16,7 @@ class TurnsController < ApplicationController
   # GET /turns/new
   def new
     @turn = Turn.new
+    @turn.patient_id = current_patient.id
   end
 
   # GET /turns/1/edit
@@ -25,10 +27,10 @@ class TurnsController < ApplicationController
   # POST /turns.json
   def create
     @turn = Turn.new(turn_params)
-
+    @save = current_patient.id
     respond_to do |format|
       if @turn.save
-        format.html { redirect_to @turn, notice: 'Turn was successfully created.' }
+        format.html { redirect_to @turn, notice: 'Su turno ya fue reservado, gracias '  + current_patient.email }
         format.json { render action: 'show', status: :created, location: @turn }
       else
         format.html { render action: 'new' }
@@ -42,7 +44,7 @@ class TurnsController < ApplicationController
   def update
     respond_to do |format|
       if @turn.update(turn_params)
-        format.html { redirect_to @turn, notice: 'Turn was successfully updated.' }
+        format.html { redirect_to @turn, notice: 'Su turno ya fue actuliazado, gracias!.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }

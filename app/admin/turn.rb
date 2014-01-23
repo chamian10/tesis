@@ -1,6 +1,6 @@
 ActiveAdmin.register Turn do
 
-  permit_params :date, :patient_id
+  permit_params :date, :patient_id, :time, :name
 
 
   config.per_page = 10
@@ -10,6 +10,7 @@ ActiveAdmin.register Turn do
     column :id
     column :patient
     column :date
+    column :time
     column :name
 
 
