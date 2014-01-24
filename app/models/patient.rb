@@ -9,4 +9,10 @@ class Patient < ActiveRecord::Base
 
   validates_presence_of :email
 
+  after_create :send_admin_mail
+
+  def send_admin_mail
+    PatientMailer.welcome_email(self).deliver
+  end
+
 end

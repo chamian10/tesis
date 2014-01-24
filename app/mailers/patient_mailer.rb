@@ -7,7 +7,7 @@ class PatientMailer < ActionMailer::Base
     @patient=patient
     @url  = 'http://example.com/login'
     mail(to: patient.email, subject: 'Bienvenido a NTP!')
-    @lala= ""
+
   end
 
 end
