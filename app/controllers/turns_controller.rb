@@ -30,6 +30,10 @@ class TurnsController < ApplicationController
     @save = current_patient.id
     respond_to do |format|
       if @turn.save
+
+        TurnMailer.welcome_email(@turn).deliver
+
+
         format.html { redirect_to @turn, notice: 'Su turno ya fue reservado, gracias '  + current_patient.email }
         format.json { render action: 'show', status: :created, location: @turn }
       else
