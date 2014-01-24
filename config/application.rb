@@ -11,7 +11,7 @@ module Tesis
 
     config.assets.enabled = false
     config.assets.initialize_on_precompile = false
-    #I18n.locale = :es
+    config.i18n.default_locale = :es
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
