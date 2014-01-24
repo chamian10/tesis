@@ -1,4 +1,9 @@
 <div class="container text-center">
+  <% if !alert.nil?%>
+      <div class="alert">
+        <%= alert %>
+      </div>
+  <%end%>
   <h1>Completa o actualiza tus datos</h1>
   <h2>Paciente:<%=current_patient.lastname %></h2>
   <div class="span12">
