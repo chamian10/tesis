@@ -1,23 +1,15 @@
-<div class="container text-center">
-  <% if !alert.nil?%>
-      <div class="alert">
-        <%= alert %>
-      </div>
-  <%end%>
-  <h1>Completa o actualiza tus datos</h1>
-  <h2>Paciente:<%=current_patient.lastname %></h2>
+<h2 class="text-center">Completa o actualiza tus datos</h2>
+<div class="row-fluid text-center"></br>
   <div class="span12">
-  <div class="offset4 span4  offset4">
+    <div class="row-fluid">
+      <div class="offset4 span4 offset4">
 
-  <div class="text-center">
 
+        <%= render 'form' %>
 
-    <%= render 'form' %>
+        <!--<a class="btn btn-large" href="<%#= patient_path(@patient) %>">Ver mis datos</a>-->
 
-<%#= link_to 'Show', @patient %>
-<%#= link_to 'Back', patients_path %>
-
-  </div>
+      </div>
     </div>
   </div>
 </div>

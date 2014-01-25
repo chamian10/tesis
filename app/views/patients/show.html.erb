@@ -2,15 +2,23 @@
 
 <div class="text-center">
 
+
+  <p>
+    <strong>Foto:</strong></br>
+    <%= image_tag(@patient.photo_url, :width => 100) if @patient.photo.present? %>
+  </p>
+
 <p>
-  <strong>Name:</strong>
+  <strong>Nombre:</strong>
   <%= @patient.name %>
 </p>
 
 <p>
-  <strong>Lastname:</strong>
+  <strong>Apellido:</strong>
   <%= @patient.lastname %>
 </p>
+
+
 
 <!--<p>-->
   <!--<strong>Gender:</strong>-->
@@ -18,12 +26,12 @@
 <!--</p>-->
 
 <p>
-  <strong>Age:</strong>
+  <strong>Edad:</strong>
   <%= @patient.age %>
 </p>
 
 <p>
-  <strong>Dni:</strong>
+  <strong>DNI:</strong>
   <%= @patient.dni %>
 </p>
 
@@ -37,10 +45,7 @@
   <!--<%#= @patient.patient %>-->
 <!--</p>-->
 
-<p>
-  <strong>Photo:</strong>
-  <%= @patient.photo %>
-</p>
+
 
 <a class="btn" href="<%=edit_patient_path(current_patient)%>">Editar</a></br></br>
 <a class="btn btn-large" href="<%=root_path%>">Volver a la página</a>

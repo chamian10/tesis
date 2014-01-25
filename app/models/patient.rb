@@ -15,4 +15,6 @@ class Patient < ActiveRecord::Base
     PatientMailer.welcome_email(self).deliver
   end
 
+  mount_uploader :photo, PhotoUploader
+
 end

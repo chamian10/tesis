@@ -44,3 +44,8 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'rails_12factor', group: :production
 
 gem 'devise'
+
+#gem 'mini_magick', '3.5.0'
+
+#Subida de imagenes
+gem 'carrierwave'
