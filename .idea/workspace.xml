@@ -5,7 +5,7 @@
     <ignored path="tesis.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390677382770" ignored="false" />
-    <file path="/Dummy.txt" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390587710637" ignored="false" />
+    <file path="/Dummy.txt" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390684806784" ignored="false" />
     <file path="/a.dummy" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1389853495997" ignored="false" />
     <file path="/20131220203729_devise_create_admin_users.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1387572196109" ignored="false" />
     <file path="/dashboard.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1389481406944" ignored="false" />
@@ -138,9 +138,10 @@
     <file path="F:/Programación/ProyectosRails/LabIII/dealhunter/app/controllers/users_controller.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390523005279" ignored="false" />
     <file path="/users_controller.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390522819448" ignored="false" />
     <file path="/turn_mailer.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390536654885" ignored="false" />
-    <file path="/environment.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390524608633" ignored="false" />
+    <file path="/environment.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390684027259" ignored="false" />
     <file path="/welcome_email.text.erb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390570220935" ignored="false" />
     <file path="$PROJECT_DIR$/../../tesis versiones/version 2/tesis/config/environment.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390591233163" ignored="false" />
+    <file path="/production.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390684978167" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,10 +175,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="patient.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="patient.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/admin/patient.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="26" selection-start="267" selection-end="267" vertical-scroll-proportion="-1.3886138">
+            <state line="12" column="26" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="environment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="8" selection-start="561" selection-end="850" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="87" column="36" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.34772182">
               <folding />
             </state>
           </provider>
@@ -205,13 +224,13 @@
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/patients/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/patient.rb" />
         <option value="$PROJECT_DIR$/app/views/patients/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/patients/edit.html.erb" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -282,6 +301,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -304,24 +355,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tesis" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -332,7 +365,7 @@
     <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../tesis versiones/version 2/tesis" />
+    <property name="last_opened_file_path" value="F:/Programación/ProyectosRails/LabIII/dealhunter" />
     <property name="FullScreen" value="false" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="dynamic.classpath" value="false" />
@@ -670,20 +703,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="2" selection-start="1148" selection-end="1148" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/turns/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/turns/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -777,7 +796,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/admin/patient.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="26" selection-start="267" selection-end="267" vertical-scroll-proportion="-1.3886138">
+        <state line="12" column="26" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="8" selection-start="561" selection-end="850" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="36" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.34772182">
           <folding />
         </state>
       </provider>

@@ -79,4 +79,19 @@ Tesis::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  ActionMailer::Base.smtp_settings = {
+      :address        => 'smtp.gmail.com',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => 'damianminniti@gmail.com',
+      :password       => 'mignini10',
+      :domain         => 'heroku.com',
+      :enable_starttls_auto => true
+  }
+
+
+  config.action_mailer.default_url_options = { :host => 'http://whispering-wildwood-3221.herokuapp.com/' }
+  config.action_mailer.delivery_method = :smtp
+
 end
