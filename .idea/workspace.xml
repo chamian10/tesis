@@ -62,7 +62,7 @@
     <file path="$PROJECT_DIR$/../eThemes-freebie-Enzyme/Theme/js/game/constants.js" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1389076629210" ignored="false" />
     <file path="/constants.js" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1389076609830" ignored="false" />
     <file path="/gameStyle.css" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1389077031461" ignored="false" />
-    <file path="/application.html.erb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390749885049" ignored="false" />
+    <file path="/application.html.erb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390756111778" ignored="false" />
     <file path="/pages_controller.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1389487893932" ignored="false" />
     <file path="$PROJECT_DIR$/../../Promos/Free HTML5 Template Hosting Website/site/index.html" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1389327905813" ignored="false" />
     <file path="$PROJECT_DIR$/../../Promos/Free HTML5 Template Hosting Website/site/css/style.css" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1389328579530" ignored="false" />
@@ -170,10 +170,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="27" selection-start="5428" selection-end="5428" vertical-scroll-proportion="-6.3076925">
+            <state line="188" column="79" selection-start="6241" selection-end="6241" vertical-scroll-proportion="0.65667576">
               <folding />
             </state>
           </provider>
@@ -188,10 +188,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_columns.scss" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_columns.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/active_admin-c4a123d48850/app/assets/stylesheets/active_admin/components/_columns.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="2" selection-end="41" vertical-scroll-proportion="0.0">
+            <state line="3" column="32" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -229,12 +229,12 @@
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/views/turns/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/pages/profile.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/layout.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/skeleton.css" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/bootstrap.min.css" />
         <option value="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/active_admin-c4a123d48850/app/assets/stylesheets/active_admin/components/_grid.scss" />
         <option value="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/active_admin-c4a123d48850/app/assets/stylesheets/active_admin/components/_columns.scss" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -357,6 +357,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tesis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -780,13 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="27" selection-start="5428" selection-end="5428" vertical-scroll-proportion="-6.3076925">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/active_admin-c4a123d48850/app/assets/stylesheets/active_admin/components/_grid.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="50" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0">
@@ -796,7 +811,14 @@
     </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/active_admin-c4a123d48850/app/assets/stylesheets/active_admin/components/_columns.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="2" selection-end="41" vertical-scroll-proportion="0.0">
+        <state line="3" column="32" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="188" column="79" selection-start="6241" selection-end="6241" vertical-scroll-proportion="0.65667576">
           <folding />
         </state>
       </provider>
