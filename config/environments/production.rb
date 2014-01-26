@@ -91,7 +91,7 @@ Tesis::Application.configure do
   }
 
 
-  config.action_mailer.default_url_options = { :host => 'http://whispering-wildwood-3221.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'http://tesisdrm.herokuapp.com/' }
   config.action_mailer.delivery_method = :smtp
 
 end

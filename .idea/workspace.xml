@@ -141,7 +141,7 @@
     <file path="/environment.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390684027259" ignored="false" />
     <file path="/welcome_email.text.erb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390570220935" ignored="false" />
     <file path="$PROJECT_DIR$/../../tesis versiones/version 2/tesis/config/environment.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390591233163" ignored="false" />
-    <file path="/production.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390684978167" ignored="false" />
+    <file path="/production.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390757219266" ignored="false" />
     <file path="/development.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390685455977" ignored="false" />
     <file path="$PROJECT_DIR$/app/mailers/patient_mailer.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390745182839" ignored="false" />
     <file path="$PROJECT_DIR$/app/mailers/turn_mailer.rb" changelist="e174bb06-9dab-4dd7-bb3f-8ca8960580e9" time="1390745182839" ignored="false" />
@@ -170,10 +170,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="79" selection-start="6241" selection-end="6241" vertical-scroll-proportion="0.65667576">
+            <state line="188" column="79" selection-start="6241" selection-end="6241" vertical-scroll-proportion="-4.72549">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="production.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="72" selection-start="3669" selection-end="3669" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="development.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="41" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.55263156">
               <folding />
             </state>
           </provider>
@@ -224,7 +242,6 @@
         <option value="$PROJECT_DIR$/app/models/patient.rb" />
         <option value="$PROJECT_DIR$/app/views/patients/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/patients/edit.html.erb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
         <option value="$PROJECT_DIR$/app/views/turns/new.html.erb" />
@@ -235,6 +252,7 @@
         <option value="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/active_admin-c4a123d48850/app/assets/stylesheets/active_admin/components/_grid.scss" />
         <option value="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/bundler/gems/active_admin-c4a123d48850/app/assets/stylesheets/active_admin/components/_columns.scss" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
       </list>
     </option>
   </component>
@@ -306,7 +324,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -320,11 +338,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,16 +747,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="36" selection-start="3514" selection-end="3514" vertical-scroll-proportion="0.34772182" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="41" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.55155873" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="77" selection-start="645" selection-end="645" vertical-scroll-proportion="0.0" />
@@ -818,7 +826,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="79" selection-start="6241" selection-end="6241" vertical-scroll-proportion="0.65667576">
+        <state line="188" column="79" selection-start="6241" selection-end="6241" vertical-scroll-proportion="-4.72549">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="72" selection-start="3669" selection-end="3669" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="41" selection-start="1426" selection-end="1426" vertical-scroll-proportion="0.55263156">
           <folding />
         </state>
       </provider>
